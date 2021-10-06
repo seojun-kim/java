@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Data_and_operation/src"/>
+	<classpathentry kind="src" path="HelloWorld"/>
+	<classpathentry excluding="java-iot-master/" kind="src" path="Programing"/>
+	<classpathentry kind="src" path="Programing/java-iot-master"/>
+	<classpathentry kind="output" path="Data_and_operation/bin"/>
+</classpath>
