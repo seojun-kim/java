@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class code {
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String[] input = bufferedReader.readLine().split(" ");
+        ArrayList<String> integerArrayList = new ArrayList<>();
+
+        //input 에서 중복값 찾기
+        for(String str : input) {
+            if(!integerArrayList.contains(str)) {
+                integerArrayList.add(str);
+            }
+        }
+
+        Collections.sort(integerArrayList);
+        for(String str : integerArrayList) {
+            System.out.printf("%s ", str);
+        }
+
+    }
+
+}
